@@ -1,2 +1,3 @@
 # NASSCOM-Training
-## It is a 10th May 2026 to 23rd May 2026
+## Duration:  10th May 2026 to 23rd May 2026
+### By: Mr Harsha
