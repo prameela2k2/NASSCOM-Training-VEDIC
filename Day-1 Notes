@@ -1,0 +1,411 @@
+# Introduction to AI, ML & DL
+## Module 1.1 - NASSCOM AI/ML Skilling Program
+**Trainer:** Mr. Harsh
+
+---
+
+## Forenoon Session (FN)
+
+### Introduction
+- Participants introduced themselves.
+
+### Pre-Test
+- Google Form: https://docs.google.com/forms/d/e/1FAIpQLScvpY6dEyhnlbTMGr51p36OMUBdTDRihNiay1jn74OfkJ_YSg/viewform
+
+---
+
+## Artificial Intelligence (AI)
+
+- AI mimics human behavior.
+
+### Turing Test
+- "Are you a human?" test used to evaluate machine intelligence.
+
+### Machine Learning (ML)
+Three important words:
+1. Performance
+2. Experience (Data)
+3. Time (Training)
+
+### Evolution of AI
+```
+AI → ML → DL → GenAI → Agents → Agentic AI
+```
+
+Timeline:
+- 1958
+- 1999
+- 2010
+- 2020
+
+---
+
+## Safety AI Lab
+
+- Claude AI can improve itself through AI-based processes rather than direct human intervention.
+
+### Login Portal
+https://labs.learningfootprints.com
+
+---
+
+# Data Science Lifecycle
+
+```text
+Problem Statement
+        ↓
+Data Collection
+        ↓
+Data Preprocessing
+        ↓
+EDA (Exploratory Data Analysis)
+        ↓
+Feature Extraction
+        ↓
+Data Splitting
+        ↓
+Modeling
+        ↓
+Prediction
+        ↓
+Model Evaluation
+        ↓
+Optimization
+        ↓
+Deployment
+        ↓
+MLOps
+```
+
+### Current Trends
+- MLOps
+- LLMOps
+- AIOps
+
+---
+
+# Types of Data
+
+1. Structured Data
+2. Unstructured Data
+3. Semi-Structured Data
+
+---
+
+# Data Science Roles
+
+## Data Engineer
+- Handles data pipelines and infrastructure.
+
+## Data Analyst
+Responsibilities:
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+
+Tools:
+- Power BI
+- Tableau
+- QlikView
+
+## Data Scientist
+- Works from feature engineering to deployment.
+
+## Business Intelligence / Business Analytics
+- Focus on business insights and forecasting.
+
+### Time Series Forecasting
+- AR
+- MA
+- ARMA
+- and others
+
+---
+
+# Machine Learning
+
+## Supervised Learning
+
+### Regression
+
+Algorithms:
+- Linear Regression
+  - Univariate
+  - Bivariate
+  - Multivariate
+- Decision Tree Regression
+- Support Vector Regression (SVR)
+- Random Forest Regression (RFR)
+- Polynomial Regression
+
+### Classification
+
+Algorithms:
+- Logistic Regression
+- Decision Tree
+- Support Vector Machine Classifier (SVM)
+- K-Nearest Neighbors (KNN)
+- Naive Bayes
+- Random Forest Classifier (RFC)
+
+### Decision Tree Variants
+- ID3
+- C4.5
+- CART
+
+---
+
+## Regression Evaluation Metrics
+
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- R² Score
+- Root Mean Squared Error (RMSE)
+
+---
+
+## Classification Evaluation Parameters
+
+- Confusion Matrix
+- Precision
+- Accuracy
+- ROC Curve
+- AUC
+- F1 Score
+- Sensitivity
+- Specificity
+
+---
+
+## Deep Learning Concepts
+
+### Loss Function
+
+### Gradient Descent
+
+### Activation Functions
+
+- Sigmoid
+- ReLU
+
+---
+
+## Unsupervised Learning
+
+### Applications
+
+- Anomaly Detection
+- PCA (Principal Component Analysis)
+- DA
+- Clustering
+
+### Clustering Algorithms
+
+- DBSCAN
+- Apriori
+- Hierarchical Clustering
+- K-Means Clustering
+
+---
+
+## Semi-Supervised Learning
+
+- Combination of labeled and unlabeled data.
+
+---
+
+## Reinforcement Learning
+
+- Learning through rewards and feedback.
+
+---
+
+## Self-Supervised Learning
+
+- Learns representations from unlabeled data.
+
+---
+
+# Prompt Engineering Concepts
+
+## Zero-Shot Prompting
+Example:
+> Bring me tea.
+
+(Vague prompt with no examples)
+
+## One-Shot Prompting
+Example:
+> Prompt with one reference/example.
+
+## Few-Shot Prompting
+Example:
+> Prompt with a few examples/references.
+
+---
+
+# Afternoon Session (AN)
+
+## Python Fundamentals
+
+### Data Structures
+- List
+- Tuple
+- Dictionary
+- Set
+
+### Other Concepts
+- Slicing
+- if-else statements
+- Functions
+
+### Object-Oriented Programming (OOP)
+
+- Encapsulation
+- Polymorphism
+- Inheritance
+
+### Additional Topics
+
+- Exception Handling
+- File Handling
+- APIs
+
+---
+
+## Google Colab Resources
+
+### Practice Notebook
+https://colab.research.google.com/drive/1afbG9YLF-dx7VnG8NAf-OixGA9uq_y0G?usp=sharing
+
+### Assignment / Task
+https://colab.research.google.com/drive/1ei5ekL5oP4Ice0ge95t0Ax1VtqjIcH8e?usp=sharing
+
+---
+
+# Module 1.3 (3:30 PM)
+
+## Linear Algebra
+
+### Building Blocks
+
+```text
+Scalar → Vector → Matrix → Tensor
+```
+
+### Definitions
+
+#### Scalar
+- Single numerical value.
+
+#### Vector
+- Quantity with magnitude.
+
+#### Matrix
+- Two-dimensional array.
+
+#### Tensor
+- N-dimensional data structure.
+
+### Note
+- For matrix operations, NumPy arrays are preferred over Python lists.
+
+---
+
+# Dot Product
+
+- Measures similarity between vectors.
+
+# Cosine Similarity
+
+Applications:
+- Word2Vec
+- Word Embeddings
+
+Example:
+```text
+King - Man + Woman ≈ Queen
+```
+
+---
+
+# Norms
+
+## L1 Norm (Manhattan Distance)
+- Used in Lasso Regression
+
+## L2 Norm (Euclidean Distance)
+- Used in Ridge Regression
+
+## L∞ Norm (Max Norm)
+- Maximum absolute value among components
+
+---
+
+# NumPy
+
+## Hands-On #1
+### Vectors, Dot Products & Norms in NumPy
+
+Topics Covered:
+- Vector Creation
+- Vector Operations
+- Dot Product
+- Cosine Similarity
+- Norms
+
+---
+
+# Essential Matrix Operations
+
+- Matrix Addition
+- Matrix Transpose
+- Scalar Multiplication
+- Matrix Multiplication
+
+---
+
+# Types of Matrices
+
+## Square Matrix
+- Rows = Columns
+
+## Symmetric Matrix
+- A = Aᵀ
+
+## Diagonal Matrix
+- Non-diagonal elements are zero
+
+---
+
+# Determinant
+
+- Represents the area scaling factor of a transformation.
+
+# Trace of a Matrix
+
+- Sum of diagonal elements.
+
+# Matrix Multiplication as Geometry
+
+- Understanding transformations and scaling through multiplication.
+
+---
+
+# Hands-On #2
+## Matrix Operations in NumPy
+
+Topics Covered:
+- Matrix Creation
+- Matrix Addition
+- Matrix Multiplication
+- Transpose
+- Identity Matrix
+- Inverse Matrix
+- Solving Linear Equations using NumPy
+
+### Identity and Inverse in NumPy
+- Creating identity matrices using `np.eye()`
+- Computing inverses using `np.linalg.inv()`
+- Verifying matrix properties
+
+---
