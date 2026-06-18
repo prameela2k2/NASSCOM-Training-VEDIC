@@ -1,0 +1,596 @@
+# Day 3 Notes - Mathematical Foundations, Probability, Data Science Lifecycle & Data Cleaning
+
+---
+
+# Mathematical Foundations
+
+## Quiz Recap
+
+A short quiz was conducted to review concepts covered in previous sessions.
+
+# Probability and Axioms
+
+Probability measures the likelihood of an event occurring.
+
+## Sample Space (S)
+
+The set of all possible outcomes of an experiment.
+
+Example:
+
+```text
+Tossing a coin
+
+S = {Heads, Tails}
+```
+
+---
+
+## Event
+
+A subset of the sample space.
+
+Example:
+
+```text
+Event A = Getting Heads
+```
+
+---
+
+## Probability
+
+The likelihood of an event occurring.
+
+Formula:
+
+[
+P(A)=\frac{\text{Number of Favorable Outcomes}}
+{\text{Total Number of Outcomes}}
+]
+
+Example:
+
+```text
+P(Heads) = 1/2 = 0.5
+```
+
+---
+
+## Probability Axioms
+
+### Axiom 1: Non-Negativity
+
+[
+P(A) \ge 0
+]
+
+Probability can never be negative.
+
+---
+
+### Axiom 2: Normalization
+
+[
+P(S)=1
+]
+
+The probability of the entire sample space is always 1.
+
+---
+
+### Axiom 3: Additivity
+
+For mutually exclusive events:
+
+[
+P(A \cup B)=P(A)+P(B)
+]
+
+---
+
+# Bayes' Theorem
+
+Bayes' Theorem helps update probabilities when new evidence becomes available.
+
+Formula:
+
+[
+P(A|B)=
+\frac{P(B|A)\times P(A)}
+{P(B)}
+]
+
+---
+
+## Components of Bayes' Theorem
+
+### Posterior
+
+[
+P(A|B)
+]
+
+Updated probability after observing evidence.
+
+---
+
+### Likelihood
+
+[
+P(B|A)
+]
+
+Probability of observing evidence given the event.
+
+---
+
+### Prior
+
+[
+P(A)
+]
+
+Initial belief before observing evidence.
+
+---
+
+### Evidence
+
+[
+P(B)
+]
+
+Overall probability of observing the evidence.
+
+---
+
+## Applications
+
+* Medical Diagnosis
+* Spam Detection
+* Fraud Detection
+* Machine Learning
+
+---
+
+# Probability Distributions
+
+Probability distributions describe how probabilities are assigned to outcomes.
+
+---
+
+## Bernoulli Distribution
+
+Used for binary outcomes.
+
+Examples:
+
+* Yes / No
+* True / False
+* Pass / Fail
+* 0 / 1
+
+Possible values:
+
+```text
+X ∈ {0,1}
+```
+
+Example:
+
+```text
+Coin Toss
+Heads = 1
+Tails = 0
+```
+
+---
+
+## Poisson Distribution
+
+Models the number of events occurring within a fixed interval.
+
+Examples:
+
+* Number of customer arrivals
+* Number of emails received per hour
+* Number of accidents per day
+
+Characteristics:
+
+* Discrete Distribution
+* Counts occurrences
+
+---
+
+## Gaussian Distribution (Normal Distribution)
+
+Also called the Bell Curve.
+
+Characteristics:
+
+* Symmetric distribution
+* Mean = Median = Mode
+* Most values lie near the center
+
+Examples:
+
+* Heights
+* Exam Scores
+* Measurement Errors
+
+---
+
+# Entropy and Information Theory
+
+Entropy measures uncertainty or randomness in data.
+
+---
+
+## Entropy
+
+Measures impurity or disorder in a dataset.
+
+Formula:
+
+[
+H(X)
+====
+
+-\sum p(x)\log_2 p(x)
+]
+
+---
+
+## Low Entropy
+
+Data is highly pure and predictable.
+
+Example:
+
+```text
+Yes Yes Yes Yes Yes
+```
+
+Entropy ≈ 0
+
+Good situation.
+
+---
+
+## High Entropy
+
+Data is highly mixed and uncertain.
+
+Example:
+
+```text
+Yes No Yes No Yes No
+```
+
+Entropy is high.
+
+Models try to reduce entropy.
+
+---
+
+## Information Gain
+
+Measures reduction in entropy after splitting data.
+
+Formula:
+
+```text
+Information Gain
+=
+Entropy Before Split
+-
+Entropy After Split
+```
+
+---
+
+## ID3 Algorithm
+
+Uses Entropy and Information Gain to build Decision Trees.
+
+Goal:
+
+```text
+Choose the feature that provides
+maximum Information Gain.
+```
+
+---
+
+## Cross Entropy
+
+Measures the difference between:
+
+* Actual probability distribution
+* Predicted probability distribution
+
+Used as a loss function in:
+
+* Logistic Regression
+* Neural Networks
+* Deep Learning
+
+Lower Cross Entropy = Better Model
+
+---
+
+# KL Divergence
+
+Kullback-Leibler Divergence measures how one probability distribution differs from another.
+
+Formula:
+
+[
+D_{KL}(P||Q)
+]
+
+Where:
+
+* P = Actual Distribution
+* Q = Predicted Distribution
+
+Applications:
+
+* Deep Learning
+* Generative Models
+* Distribution Comparison
+
+---
+
+# Mutual Information
+
+Measures how much information one variable provides about another.
+
+Characteristics:
+
+* High Mutual Information → Strong Relationship
+* Low Mutual Information → Weak Relationship
+
+Applications:
+
+* Feature Selection
+* Information Theory
+* Machine Learning
+
+---
+
+# Life Cycle of Data Science
+
+## Recap of Day 1 Afternoon Session
+
+### Step 1: Business Understanding
+
+Understand the problem and objectives.
+
+---
+
+### Step 2: Data Collection
+
+Gather data from multiple sources.
+
+Examples:
+
+* Databases
+* APIs
+* Surveys
+* Files
+
+---
+
+### Step 3: Data Cleaning
+
+Handle data quality issues.
+
+---
+
+### Step 4: Exploratory Data Analysis (EDA)
+
+Understand patterns and relationships.
+
+---
+
+### Step 5: Feature Engineering
+
+Create useful features for machine learning.
+
+---
+
+### Step 6: Model Building
+
+Train machine learning models.
+
+---
+
+### Step 7: Model Evaluation
+
+Evaluate model performance.
+
+---
+
+### Step 8: Deployment
+
+Deploy model into production.
+
+---
+
+### Step 9: Monitoring
+
+Track model performance over time.
+
+---
+
+# Data Sources
+
+## UCI Machine Learning Repository
+
+A well-known repository of authenticated datasets for machine learning research.
+
+Advantages:
+
+* Reliable datasets
+* Proper documentation
+* Academic usage
+* Benchmark datasets
+
+Examples:
+
+* Iris Dataset
+* Breast Cancer Dataset
+* Wine Dataset
+
+---
+
+## Kaggle
+
+A popular platform for:
+
+* Datasets
+* Competitions
+* Learning
+* Community Projects
+
+Advantages:
+
+* Large dataset collection
+* Real-world projects
+* Notebooks
+* Community support
+
+---
+
+# Data Cleaning
+
+## Garbage In, Garbage Out (GIGO)
+
+Poor-quality data leads to poor-quality models.
+
+Good models require good data.
+
+---
+
+# Data Quality Issues
+
+Common problems include:
+
+* Missing Values
+* Duplicate Records
+* Incorrect Data
+* Inconsistent Formats
+* Outliers
+
+---
+
+# Missing Values
+
+Missing data occurs when information is unavailable.
+
+Examples:
+
+```text
+Age = NULL
+Salary = NaN
+```
+
+---
+
+## Missing Value Handling
+
+### Remove Rows
+
+```python
+df.dropna()
+```
+
+Use when missing values are very few.
+
+---
+
+### Fill with Mean
+
+```python
+df['Age'].fillna(df['Age'].mean())
+```
+
+---
+
+### Fill with Median
+
+```python
+df['Age'].fillna(df['Age'].median())
+```
+
+---
+
+### Fill with Mode
+
+```python
+df['City'].fillna(df['City'].mode()[0])
+```
+
+---
+
+# Outliers
+
+Outliers are unusually large or small values that differ significantly from the rest of the data.
+
+Example:
+
+```text
+10, 12, 11, 13, 14, 500
+```
+
+500 is an outlier.
+
+---
+
+## Handling Outliers
+
+### Capping
+
+Replace extreme values with upper and lower thresholds.
+
+Example:
+
+```text
+Values above 95th percentile
+are replaced by the 95th percentile.
+```
+
+---
+
+### Winsorization
+
+Similar to capping.
+
+Extreme values are replaced by percentile boundary values rather than removed.
+
+Advantages:
+
+* Preserves dataset size
+* Reduces outlier influence
+
+---
+
+# Key Takeaways
+
+* Probability measures uncertainty.
+* Bayes' Theorem updates beliefs using evidence.
+* Bernoulli handles binary outcomes.
+* Poisson models event counts.
+* Gaussian follows a bell-shaped curve.
+* Entropy measures uncertainty.
+* Information Gain reduces entropy.
+* Cross Entropy is a common loss function.
+* KL Divergence compares probability distributions.
+* Mutual Information measures variable dependence.
+* Data quality directly impacts model performance.
+* Missing values and outliers must be handled before modeling.
+
+---
